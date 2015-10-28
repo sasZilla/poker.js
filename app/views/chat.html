@@ -1,0 +1,10 @@
+<div ng-controller="ChatCtrl">
+  <div ng-repeat="msg in store">
+    {{msg.name}}: {{msg.value}}
+  </div>
+
+  <div>
+    <input name="message.value" ng-model="message.value"/>
+    <button ng-click="addMsg()">Add Message</button>
+  </div>
+</div>
